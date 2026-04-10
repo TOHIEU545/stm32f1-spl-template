@@ -38,7 +38,7 @@ sudo apt install gcc-arm-none-eabi binutils-arm-none-eabi gdb-multiarch make
 #### Defines
 - __ARM_ARCH
 - __ARM_ARCH_7M__
-- 
+
 ### 5. USB Passthrough (For ST-Link on WSL)
 
 #### Ubuntu
