@@ -1,4 +1,4 @@
-build/objects/main.o: app/src/main.c cmsis/inc/stm32f10x.h \
+build/objects/main.o: app/src/main.c app/inc/main.h cmsis/inc/stm32f10x.h \
  cmsis/inc/core_cm3.h cmsis/inc/cmsis_version.h \
  cmsis/inc/cmsis_compiler.h cmsis/inc/cmsis_gcc.h \
  core/inc/system_stm32f10x.h core/inc/stm32f10x_conf.h \
@@ -14,6 +14,7 @@ build/objects/main.o: app/src/main.c cmsis/inc/stm32f10x.h \
  drivers/inc/stm32f10x_spi.h drivers/inc/stm32f10x_tim.h \
  drivers/inc/stm32f10x_usart.h drivers/inc/stm32f10x_wwdg.h \
  drivers/inc/misc.h
+app/inc/main.h:
 cmsis/inc/stm32f10x.h:
 cmsis/inc/core_cm3.h:
 cmsis/inc/cmsis_version.h:
