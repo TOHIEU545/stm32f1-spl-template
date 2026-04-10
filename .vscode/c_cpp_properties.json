@@ -1,0 +1,30 @@
+{
+    "configurations": [
+        {
+            "name": "WSL_ARM_PRJ",
+            "includePath": [
+                "${workspaceFolder}/app/inc",
+                "${workspaceFolder}/cmsis/inc",
+                "${workspaceFolder}/core/inc",
+                "${workspaceFolder}/drivers/inc",
+                "${workspaceFolder}/lib",
+                "/usr/lib/gcc/arm-none-eabi/13.2.1/include"
+            ],
+            "defines": [
+                "__ARM_ARCH",
+                "__ARM_ARCH_7M__",
+                "STM32F10X_MD",
+                "USE_STDPERIPH_DRIVER"
+            ],
+            "compilerPath": "/usr/bin/arm-none-eabi-gcc",
+            "cStandard": "c11",
+            "cppStandard": "gnu++17",
+            "intelliSenseMode": "gcc-arm",
+            "compilerArgs": [
+                "-mcpu=cortex-m3",
+                "-mthumb"
+            ]
+        }
+    ],
+    "version": 4
+}
