@@ -14,6 +14,7 @@ This project is developed in a fully IDE-independent environment using:
 
 ## Setup Guide
 ### 1. Install WSL
+- bash
 wsl --install
 wsl --install -d Ubuntu
 
