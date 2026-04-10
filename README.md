@@ -17,16 +17,27 @@ This project is developed in a fully IDE-independent environment using:
 ```bash
 - wsl --install
 - wsl --install -d Ubuntu
+```
 
 ### 2. VSCode Setup
 - Install the WSL extension in VSCode
 - Press F1 -> Select Remote-WSL: Reopen Folder in WSL.
 
 ### 3. Toolchain (GNU Arm embedded toolchain)
+```bash
 sudo apt install gcc-arm-none-eabi binutils-arm-none-eabi gdb-multiarch make
+```
 
 ### 4. Config VSCode IntelliSense and Launch(Debug)
-
+#### Include path
+- ${workspaceFolder}/**
+- /usr/lib/gcc/arm-none-eabi/13.2.1/include
+#### Compiler path
+- /usr/bin/arm-none-eabi-gcc
+#### Defines
+- __ARM_ARCH
+- __ARM_ARCH_7M__
+- 
 ### 5. USB Passthrough (For ST-Link on WSL)
 #### Ubuntu
 - sudo apt install usbutils linux-tools-generic hwdata libusb-1.0-0-dev
@@ -39,6 +50,7 @@ sudo apt install gcc-arm-none-eabi binutils-arm-none-eabi gdb-multiarch make
 - usbipd attach --wsl --busid <busid>
 
 ## Project Structure
+
 project/
 ├── app/          # Application layer
 ├── bsp/          # Board support package
